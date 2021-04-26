@@ -91,7 +91,7 @@ nav
     top: 50%;
     left: 50%;
     position: absolute;
-    transform: translate(-50%, -50px)
+    transform: translate(-50%, -50px);
 }
 
 .loginbox h1
@@ -121,7 +121,7 @@ nav
 {
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
-    border-right: 1px solid transparent;;
+    border-right: 1px solid transparent;
     border-bottom: 2px solid #8a8a8a;
     background: transparent;
     outline: none;
@@ -209,7 +209,7 @@ nav
 {
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
-    border-right: 1px solid transparent;;
+    border-right: 1px solid transparent;
     border-bottom: 2px solid #8a8a8a;
     background: transparent;
     outline: none;
@@ -255,4 +255,101 @@ nav
 .signuplogo img
 {
     width: 420px;
+}
+
+.bookings1
+{
+    width: 420px;
+    height: 320px;
+    padding-left: 12px;
+    background: rgba(255, 255, 255, 0.802);
+    border: 2px solid #8a8a8a;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50px);
+}
+
+.bookings1 h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submitbox
+{
+    padding-top: 5mm;
+}
+
+.submitbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #8a8a8a;
+    color: #fff;
+    font-size: 18px;
+}
+
+.submitbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.bookings2
+{
+    width: 620px;
+    height: 320px;
+    padding-left: 12px;
+    background: rgba(255, 255, 255, 0.802);
+    border: 2px solid #8a8a8a;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 300px);
+}
+
+.bookings2 h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table
+{
+    margin-right: 10px;
+}
+
+th
+{
+    text-align: left;
+}
+
+table, th, td
+{
+    border: 2px solid #8a8a8a;
+    border-collapse: collapse;
+}
+
+th, td
+{
+    padding: 10px;
+}
+
+.submittedbox
+{
+    width: 440px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.802);
+    border: 2px solid #8a8a8a;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50px);
+    text-align: center;
+}
+
+.subtext p
+{
+    font-family: Arial, Helvetica, sans-serif;
 }

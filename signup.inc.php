@@ -33,7 +33,7 @@ else
         values ('$username', '$password', '$forename', '$surname', '$email', '$firstad', '$secondad')";
         if ($conn->query($sql))
         {
-            echo "Details Submitted";
+            header ("location: slsubmitted.php");
         }
         else
         {
