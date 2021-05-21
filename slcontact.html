@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,34 +20,54 @@
         <div class="nav-wrapper">
             <div class="nav-left">
                 <div class="nav-link-wrapper">
-                    <a href="slhome.html">Home</a>
+                    <a href="slhome.php">Home</a>
                 </div>
                 <div class="nav-link-wrapper">
-                    <a href="slhiw.html">How It Works</a>
+                    <a href="slhiw.php">How It Works</a>
                 </div>
                 <div class="nav-link-wrapper">
-                    <a href="slaboutus.html">About Us</a>
+                    <a href="slaboutus.php">About Us</a>
                 </div>
                 <div class="nav-link-wrapper">
-                    <a href="slappdwnld.html">Download App</a>
+                    <a href="slappdwnld.php">Download App</a>
                 </div>
                 <div class="nav-link-wrapper">
-                    <a href="slcontact.html">Contact Us</a>
+                    <a href="slcontact.php">Contact Us</a>
                 </div>
                 <div class="nav-link-wrapper">
-                    <a href="slfaq.html">FAQ</a>
+                    <a href="slfaq.php">FAQ</a>
                 </div>
-                <div class="nav-link-wrapper">
-                    <a href="slfeedback.html">Feedback</a>
-                </div>
+                <?php
+                    if (isset($_SESSION["username"]))
+                    {
+                        echo "<div class='nav-link-wrapper'>";
+                        echo "  <a href='slbookings.php'>Bookings</a>";
+                        echo "</div>";
+                    }
+                ?>
             </div>
-
-                <div class="nav-right">
-                    <a href="sllogin.html">Log In/Register</a>
-                </div>
+            <div class="nav-right">
+                <?php
+                    if (isset($_SESSION["username"]))
+                    {
+                        $user = $_SESSION["username"];
+                        echo "<div class='nav-link-wrapper'>";
+                        echo " <a href='#'>Welcome $user</a>";
+                        echo "</div>";
+                        echo "<div class='nav-link-wrapper'>";
+                        echo " <a href='sllogout.inc.php'>Log Out</a>";
+                        echo "</div>";
+                    }
+                    else
+                    {
+                        echo "<div class='nav-link-wrapper'>";
+                        echo " <a href='sllogin.php'>Log In/Register</a>";
+                        echo "</div>";
+                    }
+                ?>
             </div>
     </nav>
- 
+    
     <main>
         <h1>CONTACT US</h1>
         <h2>Getting in touch is easy!</h2>
@@ -60,17 +84,12 @@
         
     </section>
     
-     
-    
 
 
     <footer>
         <h3>copyright © 2021-2030.All Rights Reserved. </h3>
-
-
-
-
      </footer>
+
 
 
 </body>
