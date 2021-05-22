@@ -1,0 +1,250 @@
+body 
+{
+    background-color: aqua;
+    background-image: url(images/Sky-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+header
+{
+    text-align: center;
+}
+
+.sky-laundry-logo
+{
+    width: 400px;
+}
+
+nav
+{
+    background-color: rgba(255, 255, 255, 0.646);
+    background-size: cover;
+    height: 80px;
+    border: 2px solid #8a8a8a;
+}
+
+.nav-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.nav-left
+{
+    display: flex;
+}
+
+.nav-wrapper > .nav-left > .nav-link-wrapper
+{
+    margin-right: 30px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link-wrapper
+{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a
+{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover
+{
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover
+{
+    color: black;
+}
+
+.loginbox
+{
+    width: 320px;
+    height: 320px;
+    background: rgba(255, 255, 255, 0.802);
+    color: white;
+    border: 2px solid #8a8a8a;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50px)
+}
+
+.loginbox h1
+{
+    color: #8a8a8a;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p
+{
+    color: #8a8a8a;
+    margin: 0;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.loginbox input
+{
+    width: 100;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;;
+    border-bottom: 2px solid #8a8a8a;
+    background: transparent;
+    outline: none;
+    height: 40x;
+    color: #8a8a8a;
+    font-size: 14px;
+}
+
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #8a8a8a;
+    color: #fff;
+    font-size: 18px;
+}
+
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.loginbox a
+{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.loginbox a:hover
+{
+    color: black;
+}
+
+.loginlogo
+{
+    text-align: center;
+}
+
+.loginlogo img
+{
+    width: 420px;
+}
+
+main{ 
+    background-color: rgba(97, 68, 124, 0.137);
+    height:400px;
+    width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+ 
+
+a{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 70px;
+    color: rgb(5, 7, 24);
+    font-family: 'calibri', Times, serif;
+    padding-top: 5px;
+}
+
+h2{
+    font-size:30px;
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+p{
+    font-size:15px;
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.maps{
+    height:300px;
+    width:200px
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  
+
+footer{
+    height:500px;
+    width:300;
+
+}
+h3{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkolivegreen;
+    text-align: center;
+
+}
+
+h4{
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkolivegreen;
+    text-align: center;
+
+}
+
+h6{
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkolivegreen;
+    text-align: left
+}
+
+.textcontainer
+{
+    background-color: rgba(255, 255, 255, 0.646);
+    background-size: cover;
+    height: 80px;
+    border: 2px solid #8a8a8a;
+    text-align: center;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
